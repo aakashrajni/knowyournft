@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Know Your NFT: What is NFT standard ERC721?</title>
+        <meta name="description" content="Know Your NFT: What is NFT standard ERC721?">
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Know Your NFT: What is NFT standard ERC721?" />
+        <meta property="og:description" content="Know Your NFT: What is NFT standard ERC721?" />
+        
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@knowyourNFT">
+        <meta name="twitter:creator" content="@knowyourNFT">
+        <meta name="twitter:title" content="Know Your NFT" />
+        <meta name="twitter:description" content="Know Your NFT: What is NFT standard ERC721?" />
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'support-us.html';
+          }
+
+          if (e.key == "ArrowRight") {
+              window.location.href = 'erc1155.html';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="hello-world">
+      <h2><a href="./">Know Your NFT</a>: What is NFT standard ERC721?</h2>
+
+      <br>
+      <br>
+
+      <h4>Explanation:</h4>
+
+      <br>
+      <br>
+      
+      <p>
+        Pioneered by CryptoKitties, ERC721 was the first standard for representing non-fungible digital assets. ERC721 is an inheritable Solidity smart contract standard, meaning that developers can easily create new ERC721-compliant contracts by importing it from the OpenZeppelin library (we have a helpful tutorial on creating your first ERC721 contract here). ERC721 is actually relatively simple: it provides a mapping of unique identifiers (each of which represents a single asset) to addresses, which represent the owner of that identifier. ERC721 also provides a permissioned way to transfer these assets, using the transferFrom method.
+    </p>
+    <br>
+    <p>
+        interface ERC721 {
+        function ownerOf(uint256 _tokenId) external view returns (address);
+        function transferFrom(address _from, address _to, uint256 _tokenId) external payable;
+        }
+    </p>
+    <br>
+    <p>
+        If you think about it, these two methods are really all you need to represent an NFT: a way to check who owns what and a way to move things around. There are a few other bells and whistles to the standard (some of which turn out to be very important for NFT marketplaces), but the core of ERC721 is quite basic.
+        
+      </p>
+     
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <p class="next">
+        Next Question: <a href="erc1155.html">What is NFT standard ERC1155?</a>.
+      </p>
+      
+      <p class="footer">
+        by <a href="https://knowyournft.com">Know Your NFT</a> 
+      </p>
+    </div>
+  </body>
+</html>
